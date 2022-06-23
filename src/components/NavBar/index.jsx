@@ -1,32 +1,46 @@
 import React from "react";
 import SearchBar from "../SearchBar";
 import logoNav from "../../Assets/logoNav.png";
+import { BiDownArrow } from "react-icons/bi";
+
 import "../../scss/components/_nav.scss";
-export default function NavBar() {
+export default function NavBar({ setTheme, theme }) {
   return (
     <>
       <div className="navContainer">
-        <div className="logoStyle">
-          <img src={logoNav} alt="logo" />
-        </div>
+        <img src={logoNav} className="logoStyle" alt="logo" />
+
         <div className="searchBar">
           <SearchBar />
         </div>
 
         <div className="enlaces">
-          <a href="https://www.mimusa.io/post/como-trabajan-las-consultoras-con-mimusa">
+          <a
+            href="https://www.mimusa.io/post/como-trabajan-las-consultoras-con-mimusa"
+            className="item"
+          >
             MIS COLECCIONES{" "}
           </a>
-          <a href="https://mimusa.manyrequests.com/login">LOGIN </a>
+          <a href="https://mimusa.manyrequests.com/login" className="item">
+            LOGIN{" "}
+          </a>
           <a href="https://mimusa.manyrequests.com/login">
-            <button>REGISTRARSE</button>
+            <button className="registro">REGISTRARSE</button>
           </a>
         </div>
+        <label className="switchMode">
+          <input
+            type="checkbox"
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          ></input>
+          <span className="sliderMode"></span>
+        </label>
       </div>
       <div className="navMainContainer">
         <ul className="navList">
           <li>
-            <a href="_blanck">DROPS</a>
+            <a href="_blanck">DROPS {<BiDownArrow />} </a>
+
             <ul>
               <li>
                 <a href="https://www.mimusa.io/post/tienes-una-agencia-escalala">
@@ -46,7 +60,8 @@ export default function NavBar() {
             </ul>
           </li>
           <li>
-            <a href="_blanck">ARTISTAS</a>
+            <a href="_blanck">ARTISTAS {<BiDownArrow />}</a>
+
             <ul>
               <li>
                 <a href="https://www.mimusa.io/post/tienes-una-agencia-escalala">
@@ -74,7 +89,7 @@ export default function NavBar() {
             <a href="_blanck">PROMOCIONES</a>
           </li>
           <li>
-            <a href="_blanck">ES</a>
+            <a href="_blanck">ES {<BiDownArrow />}</a>
             <ul>
               <li>
                 <a href="https://www.mimusa.io/post/tienes-una-agencia-escalala">

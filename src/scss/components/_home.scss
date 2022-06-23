@@ -1,0 +1,106 @@
+@import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@100&display=swap');
+.headerStyle{
+    
+    height: 600px;
+    .playerImg{
+        position: absolute;
+      
+        filter: drop-shadow(5px 5px 5px #222);
+        -webkit-filter: drop-shadow(8px 8px 8px #222);
+      left: 1100px;
+      top: 250px;
+      
+    }
+    .playerBack{
+        position: absolute;
+        left: 1220px;
+         top: 300px;
+         filter: drop-shadow(5px 5px 5px #222);
+         -webkit-filter: drop-shadow(8px 8px 8px #222);
+    }
+    .tittleHeader{
+        font-family: Neue Machina,sans-serif;
+        width:  650px;
+        
+        color: #FFFFFF;
+        display:flex;
+        flex-direction: column;
+        margin-left: 14rem;
+        position: absolute;
+        top: 25rem;
+        font-style: normal;
+        align-items: center;
+        justify-content:center;
+        h1{
+            font-weight: bolder;
+        }
+        .palabraRoja{
+            color: #D6302A;
+        }
+        
+        
+    }
+    .headerButton1 {
+        width: 189px;
+        height: 33px;
+        border: none;
+        background-color: #D6302A;
+        clip-path: polygon(0 50%, 10% 0, 100% 0%, 100% 63%, 90% 100%, 0 100%);
+        font-size: 1rem;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+    .headerButton1:hover{
+        background-color: #631916;
+        cursor: pointer;
+    }
+    .headerButton2 {
+        width: 189px;
+        height: 33px;
+        border: none;
+        background-color: #0039FF;
+        clip-path: polygon(0 50%, 10% 0, 100% 0%, 100% 63%, 90% 100%, 0 100%);
+        font-size: 1rem;
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+    .headerButton2:hover{
+        background-color: #607eecb2;
+        cursor: pointer;
+    }
+    .descriptionPage{
+        
+        width:500px ;
+        display: flex;
+        align-content: flex-start;
+        margin-left: 19rem;
+        color: white;
+        font-family: Montserrat,sans-serif;
+        position: absolute;
+        top: 32rem;
+        padding: 3px;
+
+    }
+    .headerButtons{
+        position: absolute;
+        left: 19rem;
+        top: 38rem;
+    }
+}
+.collectionsNFT{
+    background-color: #0039FF;
+    display: flex;
+    height: 500px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+
+    .subTittleCollect{
+        color: #FFFFFF;
+        h1{
+            font-family:Neue Machina,sans-serif ;
+        }
+
+    }
+}
