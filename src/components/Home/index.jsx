@@ -50,10 +50,10 @@ export default function Home() {
           <h4>OBRAS DESTACADAS</h4>
           <Cards />
         </div>
-        <div className="cardsContainer">
+        {/* <div className="cardsContainer">
           <h4>COLECCIONES</h4>
           <Cards />
-        </div>
+        </div> */}
         <div className="collectionsButtons">
           <a href="https://www.mimusa.io/free-trial">
             <button>TOKEN</button>

@@ -1,36 +1,61 @@
 import React from "react";
-import Bombonera from "../../Assets/Bombonera.png";
-import Maradona from "../../Assets/Maradona.png";
-import Esquiar from "../../Assets/Esquiar.png";
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { dataNft } from "../../data";
 export default function Cards() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
-    <div className="allCardsContainer">
-      <div className="cardsContainer">
-        <div className="card1">
-          <img src={Bombonera} alt="nft1" />
-          <h4 className="tittleCard">
-            LA BOMBONER -"TEMPLE OF WORLD FOOTBALL"
-          </h4>
-          <h5 className="precioCard">0.034 BNB</h5>
-          <h6 className="precioCardEuro">"($10.88 / 10.44€ )"</h6>
-          <button>COMPRAR</button>
-        </div>
-        <div className="card2">
-          <img src={Maradona} alt="nft1" />
-          <h4 className="tittleCard">EL SEMILLERO DEL MUNDO</h4>
-          <h5 className="precioCard">5 BNB</h5>
-          <h6 className="precioCardEuro">"($1600 / 1490.50€ )"</h6>
-          <button>COMPRAR</button>
-        </div>
-        <div className="card3">
-          <img src={Esquiar} alt="nft1" />
-          <h4 className="tittleCard">TOMBA LA BOMBA</h4>
-          <h5 className="precioCard">0.034 BNB</h5>
-          <h6 className="precioCardEuro">"($10.88 / 10.44€ )"</h6>
-          <button>COMPRAR</button>
-        </div>
-      </div>
+    <div className="slider">
+      <Slider {...settings}>
+        {dataNft.map((item) => (
+          <div className="card">
+            <div className="carTop">
+              <img src={item.image} alt={item.title} />
+              <h4>{item.title}</h4>
+            </div>
+            <div className="card-bottom">
+              <h5>{item.priceBN}</h5>
+              <h6>{item.priceCash}</h6>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 }
