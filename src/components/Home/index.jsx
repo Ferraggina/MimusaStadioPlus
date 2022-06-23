@@ -4,6 +4,8 @@ import Cards from "../Cards";
 import About from "../About";
 import Blog from "../Blog";
 import Draft from "../Draft";
+import player from "../../Assets/player.png";
+import backgroundPlayer from "../../Assets/fondoBasquetPlayer.png";
 
 export default function Home() {
   return (
@@ -14,7 +16,12 @@ export default function Home() {
             <h1>DESCUBRE, COLECCIONA </h1>
             <h1>Y COMPRA INCREIBLES</h1>
             <h1>NFTs</h1>
-            <img className="playerImg" src="" alt="" />
+            <img className="playerImg" src={player} alt="player" />
+            <img
+              className="playerBack"
+              src={backgroundPlayer}
+              alt="backgroundPlayer"
+            />
           </header>
           <section className="descriptionPage">
             <p>

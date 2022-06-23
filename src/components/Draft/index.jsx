@@ -1,4 +1,9 @@
 import React from "react";
+import nft from "../../Assets/nft.png";
+import jugadorAmarillo from "../../Assets/jugadorAmarillo.png";
+import jugadorNaranja from "../../Assets/jugadorNaranja.png";
+import fondoJugadorAmarillo from "../../Assets/fondoJugadorAmarillo.png";
+
 export default function Draft() {
   return (
     <div className="draftContainer">
@@ -7,7 +12,7 @@ export default function Draft() {
           ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-ARTISTAS-{" "}
         </p>
       </div>
-      <img src="" alt="" />
+      <img src={nft} alt="nft" />
       <div className="textDraft">
         <h4>PARTICIPA EN NUESTRO</h4>
         <h2>DRAFT DE ARTISTAS</h2>
@@ -27,6 +32,11 @@ export default function Draft() {
         <div>
           <input type="checkbox" />{" "}
           <p>I understand I can unsubscribe at any time. Privacy Policy</p>
+        </div>
+        <div className="draftImages">
+          <img src={jugadorAmarillo} alt="jugadorAmarillo" />
+          <img src={jugadorNaranja} alt="jugadorNaranja" />
+          <img src={fondoJugadorAmarillo} alt="fondoJugadorAmarillo" />
         </div>
       </div>
     </div>

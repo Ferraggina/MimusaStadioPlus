@@ -1,0 +1,56 @@
+@import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@100&display=swap');
+h1{
+    font-family: Neue Machina,monospace;
+}
+.navContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-family:Montserrat,sans-serif ;
+    a{
+        text-decoration: none;
+    }
+   
+}
+
+.navList    {
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+    background-color: #0039FF;
+    font-family:Montserrat,sans-serif ;
+    a{
+        text-decoration: none;
+        color: #15151A;
+    }
+    ul,li,a {
+        list-style: none;
+        display: block;
+        background-color: #0039FF;
+        padding: 4.5px;
+
+    }
+  .navList, a:hover{
+        background-color: #e1e3eca2;
+        
+    } 
+    li ul {
+        display: none;
+        position: absolute;
+        min-width: 140px;
+    }
+     li:hover > ul{
+        display: block;
+    }
+   
+   .navList > li{
+        float: left;
+    }
+
+    
+}

@@ -1,4 +1,8 @@
 import React from "react";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { TiSocialTwitter } from "react-icons/ti";
+
 export default function Footer() {
   return (
     <div className="footerContainer">
@@ -9,13 +13,13 @@ export default function Footer() {
       </div>
       <div className="redes">
         <a href="https://www.facebook.com/">
-          <img src="" alt="" />
+          <BsFacebook />
         </a>
         <a href="https://twitter.com/?lang=es">
-          <img src="" alt="" />
+          <BsInstagram />
         </a>
         <a href="https://www.instagram.com/">
-          <img src="" alt="" />
+          <TiSocialTwitter />
         </a>
       </div>
     </div>
