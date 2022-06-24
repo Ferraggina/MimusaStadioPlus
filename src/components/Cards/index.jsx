@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { dataNft } from "../../data";
 import "../../scss/components/_cards.scss";
-export default function Cards() {
+export default function Cards({ tituloCards }) {
   const settings = {
     dots: true,
     infinite: true,
@@ -42,20 +42,28 @@ export default function Cards() {
     ],
   };
   return (
-    <div className="slider">
-      <Slider {...settings}>
+    <div className="sliderContainer">
+      <div className="fondoTitulo">
+        <h3 className="tituloCards">{tituloCards}</h3>
+      </div>
+      <Slider {...settings} className="slider">
         {dataNft.map((item) => (
-          <div className="card">
-            <img className="cardImg" src={item.image} alt={item.title} />
-            <div className="rectangulo">
-              <div className="carTop">
+          <div className="individualCard">
+            <div className="cardBody">
+              <div className="conteinerCardElements">
+                <img src={item.image} alt={item.title} />
                 <h4>{item.title}</h4>
-              </div>
-              <div className="card-bottom">
-                <h5>{item.priceBN}</h5>
-                <h6>{item.priceCash}</h6>
+                <div className="prices">
+                  <h5>{item.priceBN}</h5>
+                  <h6>{item.priceCash}</h6>
+                </div>
               </div>
             </div>
+            {tituloCards == "Obras Destacadas" ? (
+              <button className="btn-naranja">COMPRAR</button>
+            ) : (
+              <button className="btn-azul">EXPLORAR</button>
+            )}
           </div>
         ))}
       </Slider>

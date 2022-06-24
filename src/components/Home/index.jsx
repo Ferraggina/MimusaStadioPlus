@@ -72,7 +72,7 @@ export default function Home() {
       </div>
 
       {/* <PartnerSection /> */}
-      {/* <About /> */}
+      <About />
       {/* <Draft /> */}
       {/* <Blog /> */}
     </div>

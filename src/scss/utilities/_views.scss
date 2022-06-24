@@ -1,0 +1,14 @@
+.titulo-cards{
+    
+    @include flexible(flex, column, center, flex-start);
+    height: 80px;
+    padding: 30px 100px 0px 100px;
+    h5{
+        @include nombre(#ffff, 600, 16px, $font-Montserrat, uppercase)
+    }
+    h3{
+        @include nombre(#ffff, 800, 30px, $font-Machina, uppercase)
+    }
+    box-shadow:  6px 6px 23px #01285D,
+    -6px -6px 23px #0039FF;
+}

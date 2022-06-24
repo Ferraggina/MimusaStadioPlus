@@ -1,3 +1,12 @@
-@import './base/_reset';
+@import 'utilities/variables';
+@import 'utilities/mixins';
 
-@import './theme/_themes';
+@import 'base/reset';
+@import 'base/typo';
+
+@import 'components/cards';
+
+
+
+
+@import 'theme/themes';
