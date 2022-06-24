@@ -1,18 +1,19 @@
 @import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@100&display=swap');
 
-.navContainer{
+.nav{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    background: transparent;
-    color: #15151A;
+   
+    color: #e1e1eb;
     padding-top: 30px; 
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px; 
     font-family: Montserrat,sans-serif;
+    
     a{
         text-decoration: none;
     }
@@ -20,8 +21,9 @@
         width: 239px;
         height: 42px;
     }
+    
     .enlaces{
-        width: 250px;
+        
         padding-left: 10px;
         padding-right: 10px;
         display: flex;
@@ -29,9 +31,11 @@
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
+        color: #e1e1eb;
 
         .item {
             margin: 1.5rem;
+            color: #e1e1eb;
             a {
                 text-decoration: none;
                 color: #FFFFFF;
@@ -64,7 +68,17 @@
     background-color: #631916;
     cursor: pointer;
 }
+.navMainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 118px;
+    padding-right: 118px;
+    background-color: #0039FF;
 
+    height: 37px;
+}
 .navList    {
     height: 36px;
     display: flex;
@@ -104,7 +118,14 @@
    .navList > li{
         float: left;
     }
-
     
+    // .idiomeContainer {
+    //     border: solid 1px blanchedalmond;
+        
+    //     margin-left: 50rem;
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: flex-end;
+    // }
 }
 

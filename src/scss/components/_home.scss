@@ -1,34 +1,38 @@
 @import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@100&display=swap');
 .headerStyle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 85vh;
     
-    height: 600px;
+    
     .cardP{
         display: flex;
-            justify-content: center;
-            align-items: center;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 50%;
+
+       margin-left: 45rem;
+       
+    }
+    .playerCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     .playerImg{
-        height: fit-content;
-       position: absolute;
-       left: 43%;
-       top: 26.8%;
-       filter: drop-shadow(5px 5px 5px #222);
-       -webkit-filter: drop-shadow(8px 8px 8px #222);
+        position: absolute;
+         z-index: 1;
+         clip-path: polygon(1% 95%, 66% 94%, 100% 60%, 100% 1%, 0% 0%);
+        
     }
     
     .playerBack{
-        // position: relative;
-        // left:10%;
-        // top:16%;
-        display: flex;
-            justify-content: center;
-            align-items: center;
-        margin-left: 25rem;
-        margin-top: 5rem;
-         
-         filter: drop-shadow(5px 5px 5px #222);
-         -webkit-filter: drop-shadow(8px 8px 8px #222);
+        height: fit-content;
+        position: relative;
     }
     .tittleHeader{
         font-family: Neue Machina,sans-serif;

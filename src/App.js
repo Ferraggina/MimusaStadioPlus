@@ -16,8 +16,8 @@ function App() {
         <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           switch
         </button>
-        <NavBar />
 
+        <NavBar />
         <Home />
 
         <Footer />
