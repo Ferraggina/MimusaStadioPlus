@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { dataNft } from "../../data";
+import "../../scss/components/_cards.scss";
 export default function Cards() {
   const settings = {
     dots: true,
@@ -45,13 +46,15 @@ export default function Cards() {
       <Slider {...settings}>
         {dataNft.map((item) => (
           <div className="card">
-            <div className="carTop">
-              <img src={item.image} alt={item.title} />
-              <h4>{item.title}</h4>
-            </div>
-            <div className="card-bottom">
-              <h5>{item.priceBN}</h5>
-              <h6>{item.priceCash}</h6>
+            <img className="cardImg" src={item.image} alt={item.title} />
+            <div className="rectangulo">
+              <div className="carTop">
+                <h4>{item.title}</h4>
+              </div>
+              <div className="card-bottom">
+                <h5>{item.priceBN}</h5>
+                <h6>{item.priceCash}</h6>
+              </div>
             </div>
           </div>
         ))}

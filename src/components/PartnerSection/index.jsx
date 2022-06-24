@@ -6,26 +6,36 @@ import logo2 from "../../Assets/logo2.png";
 import logo3 from "../../Assets/logo3.png";
 import logo4 from "../../Assets/logo4.png";
 import logo5 from "../../Assets/logo5.png";
+import "../../scss/components/_partnerSection.scss";
 
 import backGroundTarjAzul1 from "../../Assets/fondoTarjetaAzul.png";
 export default function PartnerSection() {
   return (
     <div className="partenerContainer">
-      <div className="banner">
-        <h2>CONOCE EL NUEVO MARKETPLACE NFT</h2>
-        <h2>STADIOPLUS</h2>
-        <p>
-          Podrás conseguir cualquier NFT de deporte de la red ethereum y BSC con
-          solo un 1% de comisión
-        </p>
-        <img src={tarjAzul} alt="tarjAzul" />
-        <img src={tarjAzul2} alt="tarjAzul" />
+      <div className="bannerContainer">
+        <div className="fondoBann">
+          <div className="textContainer">
+            <h2>CONOCE EL NUEVO MARKETPLACE NFT</h2>
+            <h2 className="colorH2">STADIOPLUS</h2>
+            <p>
+              Podrás conseguir cualquier NFT de deporte de la red ethereum y{" "}
+              <br /> BSC con solo un 1% de comisión
+            </p>
+            <a href="https://www.mimusa.io/free-trial">
+              <button className="buttonPartner">MERCADO SECUNDARIO</button>
+            </a>
+          </div>
 
-        <img src={backGroundTarjAzul1} alt="bakcGroundTarjAzul" />
-
-        <a href="https://www.mimusa.io/free-trial">
-          <button>MERCADO SECUNDARIO</button>
-        </a>
+          <img
+            className="backgrounBanner"
+            src={backGroundTarjAzul1}
+            alt="bakcGroundTarjAzul"
+          />
+        </div>
+        <div className="imgCardBlue">
+          <img className="cardBlu2" src={tarjAzul2} alt="tarjAzul" />
+          <img className="cardBlu1" src={tarjAzul} alt="tarjAzul" />
+        </div>
       </div>
       <div className="partners">
         <h4>DESCUBRE NUESTROS</h4>

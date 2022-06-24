@@ -1,0 +1,127 @@
+@import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@100&display=swap');
+
+.bannerContainer{
+    background-color:#0039FF ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40vh;
+    width: 70vw;
+    margin: 1rem;
+    margin-left: 16rem;
+    border: solid 10px #020813 ;
+    border-radius: 8px;
+    
+    border-style:double;
+
+    .fondoBann{
+        background-color:#031143 ;
+       
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        
+        
+        
+        
+        clip-path: polygon(100% 0, 100% 90%, 93% 100%, 0 100%, 0 0);
+                border-radius: 10px;
+       .backgrounBanner{
+        height: 300px;
+        width: 700px;
+        position: relative;
+        
+        
+        clip-path: polygon(100% 0, 100% 90%, 93% 100%, 0 100%, 0 0);
+        border-radius: 10px;
+     }
+   
+    
+      .textContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+        width: 600px;
+        
+        align-self: center;
+        line-height: 130%;
+        padding: 6px;
+        
+        position: relative;
+        left: 10rem;
+        
+      }
+        .textContainer h2{
+            font-family:Neue Machina,sans-serif ;
+            color: aliceblue;
+            font-weight: 800;
+            padding: 6px;
+            margin: 1px;
+            text-align: justify;
+            font-size:1.8rem;
+            
+           
+          }
+         .textContainer .colorH2{
+            color: rgba(193, 31, 31, 0.842);
+            font-weight: 1000;
+            padding: 1px;
+            
+          }
+          .textContainer p{
+            font-family: Montserrat,sans-serif;
+            color: antiquewhite;
+          }
+      
+      .buttonPartner{
+        width: 200px;
+       height: 40px;
+       border: none;
+       background-color: #D6302A;
+       clip-path: polygon(0 50%, 10% 0, 100% 0%, 100% 63%, 90% 100%, 0 100%);
+      font-size: 1rem;
+      color: #FFFFFF;
+      font-weight: 600;
+      padding-left: 6px;
+      padding-right: 6px;
+      margin: 3px;
+      
+     }
+      .buttonPartner:hover{
+        background-color: #631916;
+        transition: 1200ms;
+        cursor: pointer;
+        
+       }
+    
+    }
+    .imgCardBlue{
+        position: absolute;
+        
+            
+            
+           
+        .cardBlu1{
+            
+            position:relative;
+            left: 49rem;
+            bottom: 2rem;
+        }
+        .cardBlu2{
+            
+            position:relative;
+           
+            left: 68rem;
+            top: 3rem;
+            transform: translate(-41px, 0px) scale(0.9, 0.9) skew(-9deg, 4deg);
+           
+        }
+        
+
+    }
+    
+    
+
+}

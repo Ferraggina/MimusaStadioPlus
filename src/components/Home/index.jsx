@@ -18,12 +18,14 @@ export default function Home() {
             <h1>Y COMPRA INCREIBLES</h1>
             <h1 className="palabraRoja">NFTs</h1>
           </div>
-          <img
-            className="playerBack"
-            src={backgroundPlayer}
-            alt="backgroundPlayer"
-          />
-          <img className="playerImg" src={player} alt="player" />
+          <div className="cardP">
+            <img
+              className="playerBack"
+              src={backgroundPlayer}
+              alt="backgroundPlayer"
+            />
+            <img className="playerImg" src={player} alt="player" />
+          </div>
         </header>
         <section className="descriptionPage">
           <p>
@@ -50,10 +52,10 @@ export default function Home() {
           <h4>OBRAS DESTACADAS</h4>
           <Cards />
         </div>
-        {/* <div className="cardsContainer">
+        <div className="cardsContainer">
           <h4>COLECCIONES</h4>
           <Cards />
-        </div> */}
+        </div>
         <div className="collectionsButtons">
           <a href="https://www.mimusa.io/free-trial">
             <button>TOKEN</button>
