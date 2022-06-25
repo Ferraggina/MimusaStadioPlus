@@ -17,10 +17,10 @@ export default function Footer() {
           <a className="icono" href="https://www.facebook.com/">
             <BsFacebook />
           </a>
-          <a className="icono" href="https://twitter.com/?lang=es">
+          <a className="icono" href="https://www.instagram.com/">
             <BsInstagram />
           </a>
-          <a className="icono" href="https://www.instagram.com/">
+          <a className="icono" href="https://twitter.com/?lang=es">
             <TiSocialTwitter />
           </a>
         </div>
