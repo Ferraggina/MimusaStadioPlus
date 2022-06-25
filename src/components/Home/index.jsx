@@ -3,8 +3,9 @@ import "../../scss/components/_home.scss";
 import PartnerSection from "../PartnerSection";
 import Cards from "../Cards";
 import About from "../About";
-import Blog from "../Blog";
+
 import Draft from "../Draft";
+import BannerCont from "../BannerCont";
 
 import player from "../../Assets/player.png";
 import backgroundPlayer from "../../Assets/fondoBasquetPlayer.png";
@@ -72,7 +73,7 @@ export default function Home() {
       <PartnerSection />
       <About />
       <Draft />
-      {/* <Blog /> */}
+      <BannerCont />
     </div>
   );
 }
