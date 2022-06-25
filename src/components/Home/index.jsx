@@ -71,7 +71,7 @@ export default function Home() {
 
       <PartnerSection />
       <About />
-      {/* <Draft /> */}
+      <Draft />
       {/* <Blog /> */}
     </div>
   );

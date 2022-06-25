@@ -5,7 +5,7 @@
     position: relative;
     width: 338px;
     height: 36px;
-    background-color: white;
+    background-color: transparent;
     clip-path: polygon(0 20%, 5% 0, 100% 0%, 100% 80%, 95% 100%, 0 100%);
     padding: 0, 15px, 0 15px;
     .searchBar{
@@ -15,14 +15,15 @@
         position: absolute;
         align-items: center;
         justify-content: space-around;
-        border: none;
-        background-color: #011c44;
+        border: solid 3px rgb(170, 71, 53);
+        border-radius: 10px;
+        background-color: transparent;
         clip-path: polygon(0 20%, 5% 0, 100% 0%, 100% 80%, 95% 100%, 0 100%);
         padding: 0, 15px, 0 15px;
         .input{
             width: 60%;
             font-size: 1rem;
-            color: #FFFFFF;
+            color: #f7eeee;
             background: transparent;
             border: none;
             outline: none;
@@ -35,7 +36,9 @@
                 outline: none;
                 border: none;
             }
+            
         }
+
         .lupa{
             width: 18px;
             height: 18px;

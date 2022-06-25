@@ -1,0 +1,57 @@
+@import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@100&display=swap');
+.draftContainer{
+    // background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .separador{
+        display: flex;
+        flex-direction: row;
+        max-height: 4rem;
+        background-color: #0039FF;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+       
+        font-family: Montserrat,sans-serif;
+        font-weight: bold;
+    }
+    
+    .monkeyContainer{
+       
+        margin-top: 1rem;
+        border-radius: 25px;
+        .monkey{
+            max-width: 25%wh;
+            border-radius: 16px;
+            border: solid 5px rgb(15, 15, 63);
+            border-style:outset;
+
+        }
+    }
+    .textDraft{
+        font-family: Neue Machina, sans-serif;
+        color: white;
+        text-shadow: 1px 2px #ff0000;
+        .h4draft{
+            
+            padding-left: 1.5rem;
+            margin-bottom: -1rem;
+        }
+    }
+    .buttonIns{
+        width: 189px;
+    height: 33px;
+    border: none;
+    background-color: #D6302A;
+    clip-path: polygon(0 50%, 10% 0, 100% 0%, 100% 63%, 90% 100%, 0 100%);
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    }
+    .buttonIns:hover{
+        background-color: #631916;
+    cursor: pointer;
+    }
+
+}

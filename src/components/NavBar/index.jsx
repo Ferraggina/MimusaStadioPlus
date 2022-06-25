@@ -34,7 +34,7 @@ export default function NavBar({ setTheme, theme }) {
               type="checkbox"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             ></input>
-            <span className="sliderMode"></span>
+            <span className="sliderMode round"></span>
           </label>
         </div>
       </div>

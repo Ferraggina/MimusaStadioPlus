@@ -13,11 +13,11 @@ function App() {
   return (
     <div className={theme}>
       <div className="background">
-        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+        {/* <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           switch
-        </button>
+        </button> */}
 
-        <NavBar />
+        <NavBar setTheme={setTheme} theme={theme} />
         <Home />
 
         <Footer />
