@@ -2,25 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans+JP:wght@100&display=swap');
 
 .bannerContainer{
-    background-color:#0039FF ;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 40vh;
     width: 70vw;
     margin: 1rem;
-    margin-left: 16rem;
-    border: solid 10px #020813 ;
-    border-radius: 8px;
+   
     
-    border-style:double;
 
     .fondoBann{
         background-color:#031143 ;
        
         display: flex;
         flex-direction: row;
-        margin: 1rem;
+        margin-top: 0.5rem;
+        border: solid 4px black;
         
         
         
@@ -124,4 +122,25 @@
     
     
 
+}
+.partners{ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #8d231f;
+  margin: 3rem;
+  border-radius: 6px;
+  .texcPartNerContainer{
+    
+    max-width: 10rem;
+    font-family: Neue Machina, sans-serif;
+    color: whitesmoke;
+  }
+  h2{
+    font-size: xx-large;
+  }
+  h4{
+    font-size: larger;
+  }
 }

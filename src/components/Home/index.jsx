@@ -61,15 +61,15 @@ export default function Home() {
         </div>
         <div className="collectionsButtons">
           <a href="https://www.mimusa.io/free-trial">
-            <button>TOKEN</button>
+            <button className="buttonToken">TOKEN</button>
           </a>
           <a href="https://www.mimusa.io/free-trial">
-            <button>IR A BLOG</button>
+            <button className="buttonBlog">IR A BLOG</button>
           </a>
         </div>
       </div>
 
-      {/* <PartnerSection /> */}
+      <PartnerSection />
       <About />
       {/* <Draft /> */}
       {/* <Blog /> */}

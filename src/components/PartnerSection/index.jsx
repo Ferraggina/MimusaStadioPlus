@@ -38,8 +38,10 @@ export default function PartnerSection() {
         </div>
       </div>
       <div className="partners">
-        <h4>DESCUBRE NUESTROS</h4>
-        <h2>PARTNERS</h2>
+        <div className="texcPartNerContainer">
+          <h4>DESCUBRE NUESTROS</h4>
+          <h2>PARTNERS</h2>
+        </div>
         <a href="https://www.mimusa.io/post/como-trabajan-las-consultoras-con-mimusa">
           <img src={logo1} alt="logo1" />
         </a>

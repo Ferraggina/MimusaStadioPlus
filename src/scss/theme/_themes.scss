@@ -12,7 +12,8 @@
 
 .dark {
     .background {
-        background-color: #011c44;    
+        background: rgb(12,15,96);
+        background: linear-gradient(130deg, rgba(12,15,96,1) 3%, rgba(12,105,117,1) 22%, rgba(25,35,143,1) 39%, rgba(7,23,82,1) 86%);
         min-height: 100vh;
         height: 100%;  
     }
