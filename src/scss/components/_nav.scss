@@ -31,14 +31,15 @@
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        color: #e1e1eb;
+        color: rgb(218, 218, 218);
 
         .item {
             margin: 1.5rem;
             color: #e1e1eb;
+            text-shadow: 0.8px 0.8px #0f0f0f;
             a {
                 text-decoration: none;
-                color: #FFFFFF;
+                color: rgb(218, 218, 218);
                 font-weight: 600;
                 text-transform: uppercase;
                 font-size: 1rem;

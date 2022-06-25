@@ -22,6 +22,10 @@
             height: 57px;
             background-color: #011C44;
             text-align: start;
+            color: #093d8b;
+            font-family:Neue Machina, sans-serif;
+            font-size: x-large;
+            text-transform: uppercase;
             
            
             clip-path: polygon(0 0%, 100% 0, 100% 0%, 100% 65%, 96% 100%, 0 100%);
@@ -56,28 +60,55 @@
                 
                 
                 .conteinerCardElements{
-                    
+                    display: flex;
+                    flex-direction: column;
                     img {
                         margin-top: 20px;
                         margin-bottom: 10px;        
                     }
 
                     h4{
-                        min-height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        
+                        margin-left: 1rem;
+                        min-height: 35px;
                         
                         width: 80%;
                         margin-top: 10px;
-                        margin-bottom: 10px;
-                        text-align: start;
+                        margin-bottom: 5px;
+                        text-align: center;
+                        font-family: Neue Machina,sans-serif;
+                        padding: 4px;
+                        
+                        background: rgb(2,0,36);
+                        background: linear-gradient(90deg, rgb(8, 4, 73) 15%, rgba(9,9,121,1) 64%, rgba(11, 37, 109, 0.795) 100%);
+                        border-style: double;
+                        border-radius: 10px;
+                        border: solid 2px;
+                    }
+                    h4:hover{
+                        background: rgb(2,0,36);
+                        background: linear-gradient(90deg, rgb(5, 47, 95) 15%, rgb(29, 71, 185) 64%, rgba(81, 174, 211, 0.795) 100%);
+
                     }
                     
                     .prices{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        margin-left: 1rem;
+                        margin-bottom: 4px;
                         
-                        width: 80%;
-                        height: 50px;
-                        text-align: start;
-                        margin-top: 10px;
-                        margin-bottom: 20px;
+                        width: 60%;
+                        height: 60px;
+                        text-align: center;
+                        font-family: Montserrat,sans-serif;
+                        background-color: rgb(109, 148, 93);
+                        border-radius: 5px;
+                        
+                       
                         
                     }
                 }

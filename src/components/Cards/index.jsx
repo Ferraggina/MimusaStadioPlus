@@ -59,7 +59,8 @@ export default function Cards({ tituloCards }) {
                 </div>
               </div>
             </div>
-            {tituloCards == "Obras Destacadas" ? (
+
+            {tituloCards == "papa" ? (
               <button className="btn-naranja">COMPRAR</button>
             ) : (
               <button className="btn-azul">EXPLORAR</button>

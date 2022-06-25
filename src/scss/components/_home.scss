@@ -49,9 +49,11 @@
         justify-content:center;
         h1{
             font-weight: bolder;
+            text-shadow: 2px 2px #ff0000;
         }
         .palabraRoja{
             color: #D6302A;
+            text-shadow: 2px 2px #791b1b;
         }
         
         
@@ -90,11 +92,12 @@
         display: flex;
         align-content: flex-start;
         margin-left: 19rem;
-        color: white;
+        color: rgb(163, 163, 163);
         font-family: Montserrat,sans-serif;
         position: absolute;
         top: 32rem;
         padding: 3px;
+        text-shadow: 0.5px 0.5px #0f0f0f;
 
     }
     .headerButtons{
@@ -103,3 +106,59 @@
         top: 38rem;
     }
 }
+
+.subTittleCollect{
+    display: flex;
+     flex-direction: column;
+     
+     align-content:flex-start;
+     
+     margin-bottom: 4px;
+     h4{
+        font-family: Neue Machina, sans-serif;
+        font-weight: 600;
+        color: rgb(219, 217, 217);
+        text-shadow: 1px 1px #b30404;
+        
+        max-width: 19rem;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-left: 6rem;
+        margin-bottom: 1px;
+        
+     }
+    h2{
+        font-family: Neue Machina, sans-serif;
+        font-weight: 600;
+        color: rgb(219, 217, 217);
+        
+        
+        max-width: 19rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-shadow: 1px 1px #b90f0f;
+        
+        margin-left: 6rem;
+    }
+
+
+}
+.cardsContainer1{
+
+    .textCardContainer{
+        background-color: #b30404;
+        height: 3rem;
+        max-width: 10rem;
+        margin-left: 3.5rem;
+        position: absolute;
+        top: 55rem;
+        h2{
+            font-size: xx-large;
+        }
+    }
+}
+

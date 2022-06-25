@@ -53,13 +53,11 @@ export default function Home() {
           <h4>DESCUBRE NUESTROS</h4>
           <h2>NUEVOS LANZAMIENTOS</h2>
         </div>
-        <div className="cardsContainer">
-          <h4>OBRAS DESTACADAS</h4>
-          <Cards />
+        <div className="cardsContainer1">
+          <Cards tituloCards={"Obras Destacadas"} />
         </div>
         <div className="cardsContainer">
-          <h4>COLECCIONES</h4>
-          <Cards />
+          <Cards tituloCards={"COLECCIONES"} />
         </div>
         <div className="collectionsButtons">
           <a href="https://www.mimusa.io/free-trial">
